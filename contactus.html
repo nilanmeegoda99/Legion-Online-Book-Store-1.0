@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Legion Book Store</title>
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+    </head>
+
+    <body>
+        <div class="main_container">
+            <div class="top_head">
+                    <div class="mlogo">
+                        <img class="logopic" src="images\logo.png">
+                    </div>
+
+                    <div class="wmoto">
+                        <h1 id="moto">Welcome to Srilanka's #1 Online Book Store</h1>
+                    </div>
+                    <div class="user-cart">
+                            <h4 id="carttag"><span class="fa fa-shopping-cart fa-lg"></span> Cart <span class="crtnum"> 2 </span></h4>
+                            <h3 id="usertag"><span class="fa fa-user-circle fa-lg"></span> Username </h3>
+                            
+                    </div>
+                  <div class="reg-signbt">
+                    <button class="button regbutton"><a style="text-decoration:none; color:inherit;" href="log.html">Sign In</a></button>
+                    <button class="button signbutton"><a style="text-decoration:none; color:inherit; "  href="reg.html">Register</a></button>
+                  </div>
+            </div>
+
+            <div class="nav">
+                    <ul>
+                            <li><a style="text-decoration:none; color:inherit;"  href="index.html">Home</a></li>
+                            <li class="dropdown">
+                                    <a style="text-decoration:none; color:inherit;" href="javascript:void(0)" class="dropbtn">Catergories</a>
+                                    <div class="dropdown-content">
+                                      <a style="text-decoration:none; color:inherit;" href="product-listing-page.html">Books</a>
+                                      <a style="text-decoration:none; color:inherit;" href="product-listing-page.html">E-Books</a>
+                                      <a style="text-decoration:none; color:inherit;" href="product-listing-page.html">Authors</a>
+                                      <a style="text-decoration:none; color:inherit;" href="product-listing-page.html">Magazines</a>
+                                    </div>
+                                  </li>
+                            <li class="dropdown">
+                                        <a style="text-decoration:none; color:inherit;" href="javascript:void(0)" class="dropbtn">Pages</a>
+                                        <div class="dropdown-content">
+                                          <a style="text-decoration:none; color:inherit;" href="userpro.html">My Profile</a>
+                                          <a style="text-decoration:none; color:inherit;"  href="#">My Cart</a>
+                                          <a style="text-decoration:none; color:inherit;" href="#">My Orders</a>
+                                          
+                                        </div>
+                                    </li>
+                            <li><a style="text-decoration:none; color:inherit;" href="product-listing-page.html">Book list view</a></li>
+                            <li><a style="text-decoration:none; color:inherit;" href="webvids.html">Videos</a></li>
+                            <li><a style="text-decoration:none; color:inherit;" href="search.html">Search Books</a></li>
+                            <li><a style="text-decoration:none; color:inherit;" class="active" href="contactus.html">Contact Us</a></li>
+                            <li><a style="text-decoration:none; color:inherit;" href="aboutus.html">About Us</a></li>
+                            <div class="search-container">
+                                    <form >
+                                      <input type="text" placeholder="Search.." name="search">
+                                      <button type="submit"><i class="fa fa-search"></i></button>
+                                    </form>
+                            </div>
+                    </ul>
+            </div>
+            
+            <div class="banner">
+                    <img class="mySlides"  src="images/sandacontact.jpg">
+                    
+            </div>
+                
+            
+            <div class="content">
+            	<h3>Contact Form</h3>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Province</label>
+    <select id="country" name="country">
+      <option value="australia">Western</option>
+      <option value="canada">North Western</option>
+      <option value="usa">South</option>
+      <option value="australia">North</option>
+      <option value="canada">East</option>
+      <option value="usa">Central</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+           <h1>My First Google Map</h1>
+
+<div id="googleMap" style="width:100%;height:400px;"></div>
+
+<script>
+function myMap() {
+var mapProp= {
+  center:new google.maps.LatLng(51.508742,-0.120850),
+  zoom:5,
+};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+
+               
+            </div>
+            <div class="footer">
+                <div class="footerpg">
+                    <ul style="list-style-type: none;">
+                        <li ><a style="text-decoration:none; color:inherit;" class="footli" href="index.html"><span class="fa fa-home fa-lg">Home</a></li>
+                        <br>
+                        <li ><a style="text-decoration:none; color:inherit;" class="footli" href="aboutus.html">About Us</a></li>
+                        <br>
+                        <li ><a style="text-decoration:none; color:inherit;" class="footli" href="privacy.html">Privacy Policies</a></li>
+                        <br>
+                        <li><a style="text-decoration:none; color:inherit;" class="footli" href="terms.html">Terms and Conditions</a></li>
+                        <br>
+                    </ul>
+                </div>
+                    <h3  style="padding-top:30px;    padding-right: 158px; color: antiquewhite;">With most trusted payment options.Your data are secured with us.</h3>
+                    <img class="paymtimg" src="images\payment.png">
+                    <p>© Copyright 2019 by Legion Online Book Store. &nbsp;All rights reversed.</p>
+            </div>
+
+        </div>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>
